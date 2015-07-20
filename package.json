@@ -1,0 +1,28 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "The weather, at your fingertips",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owebboy/weather.git"
+  },
+  "keywords": [
+    "yql",
+    "weather"
+  ],
+  "author": "Oliver Pope <owebboy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/owebboy/weather/issues"
+  },
+  "homepage": "https://github.com/owebboy/weather",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Weather</title>
+
+	<!-- FAVICONS -->
+	<link rel="apple-touch-icon-precomposed" href="favicon/weather-512x512.png">
+
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicon/weather-256x256.png">
+
+	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/weather-76x76@2x.png">
+
+	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/weather-60x60@2x.png">
+
+	<link rel="icon" href="favicon/weather-32x32.png" sizes="32x32">
+
+	<link rel="shortcut icon" href="favicon/weather.ico" />
+
+	<!-- STYLES -->
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="nprogress.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body onload="get_location()">
+
+    <p class="no"></p>
+
+	  <div class="content">
+
+      <div class="current">
+
+        <div class="topbar">
+          <div class="today-date">
+            <h2 class="day-0 weak"></h2>
+            <div class="popup" target>
+
+              <p><b>Humidity</b> <span class="humidity"></span></p>
+              <p><b>Pressure</b> <span class="pressure"></span></p>
+              <p><b>Visibility</b> <span class="visibility"></span></p>
+              <br>
+              <p><b>Sunrise</b> <span class="sunrise"></span></p>
+              <p><b>Sunset</b> <span class="sunset"></span></p>
+
+            </div>
+          </div>
+
+          <div class="today">
+            <p>HI<span class="high-0 hi"></span> LO<span class="low-0 lo"></span></p>
+          </div>
+        </div>
+
+    		<h1 class="temperature"></h1>
+
+    		<p><span class="location"></span> <span class="weather"></span> <span class="wind"></span></p>
+
+      </div>
+
+      <div class="forecast">
+
+        <div class="date">
+          <h3 class="day-1"></h3>
+
+          <p>high <br><span class="temp high-1"></span></p>
+          <p>low <br><span class="temp low-1"></span></p>
+
+          <h4 class="text-1"></h4>
+        </div>
+
+        <div class="date">
+          <h3 class="day-2"></h3>
+
+          <p>high <br><span class="temp high-2"></span></p>
+          <p>low <br><span class="temp low-2"></span></p>
+
+          <h4 class="text-2"></h4>
+        </div>
+
+        <div class="date">
+          <h3 class="day-3"></h3>
+
+          <p>high <br><span class="temp high-3"></span></p>
+          <p>low <br><span class="temp low-3"></span></p>
+
+          <h4 class="text-3"></h4>
+        </div>
+
+        <div class="date">
+          <h3 class="day-4"></h3>
+
+          <p>high <br><span class="temp high-4"></span></p>
+          <p>low <br><span class="temp low-4"></span></p>
+
+          <h4 class="text-4"></h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+  
+  <!-- insecure -- need fix -->
+  <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+  <script src="js/global.js"></script>
+</html>

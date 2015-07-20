@@ -1,0 +1,221 @@
+/* weather
+   oliver pope <owebboy.com>
+	 style.css
+	 (c) 2015
+*/
+
+/* common */
+
+html {
+	font: 400 1em "Helvetica Neue", Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: #fff;
+	color: #333;
+	padding: 0;
+	margin: 0;
+	-webkit-text-size-adjust: none;
+}
+
+.content {
+	display: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+footer a {
+	color: rgba(255, 0, 0, 0.5);
+}
+
+.popup {
+  display: none;
+}
+
+.popup p {
+	font-weight: 300;
+	font-size: 1.3em;
+	margin: .5em 0;
+}
+
+.popup p b {
+	font-weight: 500;
+}
+
+.day-0:hover + [target] {
+	top: 4em;
+	position: absolute;
+  display: block;
+}
+
+.current {
+	height: 800px;
+	display: block;
+}
+
+.topbar {
+	text-align: left;
+}
+
+.today, .today-date {
+	float: left;
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.today {
+	display: inline-block;
+	text-align: right;
+}
+
+.weak {
+	font-weight: 300;
+}
+
+.hi {
+	font-size: 2em;
+}
+
+.lo {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+/* loading status */
+
+.loading {
+	text-align: center;
+	padding-top: 10em;
+}
+
+/* location, text, wind */
+
+.location, .weather, .wind {
+	font-size: 2em;
+	font-weight: 200;
+	padding: 0 1em;
+	margin: 0;
+	line-height: 1;
+}
+
+/* temperature */
+
+.temperature {
+	font-size: 50vw;
+	font-weight: 100;
+	margin: 0;
+	line-height: 1;
+	letter-spacing: -5px;
+}
+
+.temperature sup {
+	font-size: 30vw;
+	letter-spacing: -5em;
+}
+
+/* forecast */
+
+.forecast {
+	height: 400px;
+}
+
+.forecast:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.date {
+	float: left;
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+.date p {
+	margin-top: 1em;
+	font-size: 13px;
+	text-transform: uppercase;
+	float: left;
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.date h3 {
+	margin: 0;
+}
+
+.date h4 {
+	font-weight: 400;
+}
+
+.temp {
+	font-size: 32px;
+	font-weight: 300;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 350px) {
+	.date, .today, .today-date {
+		width: calc(100% - 20px);
+	}
+	.today-date, .today {
+		text-align: center;
+	}
+	.date p {
+		width: calc(50% - 20px) !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.date p {
+		width: calc(100% - 20px);
+	}
+	.current {
+		height: 600px;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.current {
+		height: 650px;
+	}
+	.temp {
+		font-size: 4.4em;
+		font-weight: 100;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.location, .weather, .wind {
+		display: block;
+		padding: .5em;
+		font-weight: 400;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.current {
+		height: 750px;
+	}
+	.temp {
+		font-size: 6em;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.temperature {
+		font-size: 40em;
+	}
+	.temperature sup {
+		font-size: .7em;
+	}
+	.current {
+		height: 900px;
+	}
+	.temp {
+		font-size: 7em;
+		font-weight: 100;
+	}
+}
